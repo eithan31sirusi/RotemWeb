@@ -18,7 +18,7 @@ const NavBar = (props) => {
           <li className="nav-links">Contact Us</li>
         </Link>
         <Link to="login" className="nav-links-wrap">
-          <li className="nav-links">LogIn/Logout</li>
+          <li className="nav-links">LogIn_Logout</li>
         </Link>
       </ul>
     </nav>
