@@ -1,15 +1,26 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./NavBar.styles.scss";
 
 const NavBar = (props) => {
+  const [onLink, setOnLink] = useState(false);
+  const clickHandler = () => {
+    setOnLink(!onLink);
+    console.log("click");
+  };
+
   return (
     <nav className="nav-container">
       <ul className="nav-item">
         <h3>Logo</h3>
         <Link className="nav-links-wrap" to="/">
-          <li className="nav-links">Home</li>
+          <li
+            onClick={clickHandler}
+            className={`nav-links ${onLink ? "nav_active" : ""}`}
+          >
+            Home
+          </li>
         </Link>
         <Link className="nav-links-wrap" to="/about">
           <li className="nav-links">About</li>
