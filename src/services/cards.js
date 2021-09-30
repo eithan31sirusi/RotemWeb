@@ -29,7 +29,7 @@ const cards = [
   },
   {
     id: 4,
-    title: "many web sites still",
+    title: "many web sites",
     imageUrl:
       "https://cdn.pixabay.com/photo/2021/09/03/15/37/mountain-6596074_960_720.jpg",
     imageRedirect:

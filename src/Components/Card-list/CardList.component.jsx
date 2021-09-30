@@ -8,7 +8,7 @@ import PopUp from "../UI/PopUp/PopUp.component";
 
 import cards from "../../services/cards";
 
-import "./Cards.styles.scss";
+import { CardListContainer } from "./CardList.styled";
 
 const Cards = () => {
   const [showPopUp, setshowPopUp] = useState(false);
@@ -38,7 +38,7 @@ const Cards = () => {
             clickHandler={clickHandler}
           >
             <Button
-              backgroundColor="red"
+              backgroundColor="#eba6ed"
               variant="contained"
               color="primary"
               onClick={() => clickHandler(card.id)}
@@ -50,19 +50,13 @@ const Cards = () => {
       })}
 
       {showPopUp && (
-        <div className="popup-container">
-          <PopUp card={selectedCard} />
-          <div className="btn-container">
-            <Button
-              className="btn"
-              variant="contained"
-              color="primary"
-              onClick={closeHandler}
-            >
+        <CardListContainer>
+          <PopUp card={selectedCard}>
+            <Button backgroundColor="#eba6ed" onClick={closeHandler}>
               Close
             </Button>
-          </div>
-        </div>
+          </PopUp>
+        </CardListContainer>
       )}
     </Container>
   );
