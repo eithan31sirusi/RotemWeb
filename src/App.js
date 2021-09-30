@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import NavBar from "./Components/Header/Navbar/NavBar.component";
@@ -8,7 +8,7 @@ import About from "./Components/pages/About/About.component";
 import Contacts from "./Components/pages/Contacts/Contacts.component";
 import Login from "./Components/pages/Login/Login.component.jsx";
 
-import "./App.scss";
+import "./App.css";
 
 function App() {
   return (
