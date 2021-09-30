@@ -1,18 +1,41 @@
-.popup-container {
-  display: flex;
-  flex-direction: column;
-  background-color: lightgrey;
-  flex-wrap: wrap;
+import styled from "styled-components";
+
+export const PopUpBg = styled.div`
+  width: 100%;
+  height: 100%;
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0%;
+  bottom: 0%;
+`;
+
+export const PopUpContainer = styled.div`
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+  left: 25%;
+  align-items: center;
+  background-color: lightgray;
+`;
+
+export const ImageContainer = styled.div`
+  display: flex;
+  height: 20rem;
+  flex-wrap: wrap;
+  overflow: hidden;
   justify-content: center;
-  width: 75vh;
-  height: 76vh;
+`;
 
-  .popup-postion {
-    width: 100%;
-    height: 50%;
-  }
+export const PopUpLink = styled.a`
+  text-decoration: none;
+  color: black;
+`;
 
+/*
   .popup-link {
     text-decoration: none;
     color: black;
@@ -58,3 +81,4 @@
     }
   }
 }
+ */
