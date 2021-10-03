@@ -22,5 +22,7 @@ export const IframeRow = styled.div`
 `;
 
 export const IframeHr = styled.hr`
-  width: 50%;
+  width: 20rem;
+  border-color: Ivory;
+  border-style: solid;
 `;
