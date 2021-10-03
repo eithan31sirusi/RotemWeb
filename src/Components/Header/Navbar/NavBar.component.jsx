@@ -14,6 +14,7 @@ const NavBar = () => {
   console.log(splitLocation);
 
   return (
+
     <Nav>
       <NavMenu>
         <LogoLink to="/">
