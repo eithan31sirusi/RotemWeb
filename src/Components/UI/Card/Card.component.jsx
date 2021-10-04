@@ -17,7 +17,7 @@ const Card = (props) => {
           <CardImage src={props.imageUrl} alt="" />
           <CardContent className="card-content">
             <CardTitle className="card-title">
-              <h1 className="card-title-h3">{props.title}</h1>
+              <h2 className="card-title-h3">{props.title}</h2>
             </CardTitle>
             <div className="card-body">
               <CardParagraph className="card-body-p">

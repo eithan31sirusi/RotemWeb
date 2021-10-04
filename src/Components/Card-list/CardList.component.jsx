@@ -43,7 +43,7 @@ const Cards = () => {
               color="primary"
               onClick={() => clickHandler(card.id)}
             >
-              View More
+              לקרוא עוד
             </Button>
           </Card>
         );
@@ -53,7 +53,7 @@ const Cards = () => {
         <CardListContainer>
           <PopUp card={selectedCard}>
             <Button backgroundColor="#eba6ed" onClick={closeHandler}>
-              Close
+              סגרי
             </Button>
           </PopUp>
         </CardListContainer>

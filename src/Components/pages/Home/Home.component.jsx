@@ -9,6 +9,7 @@ import "./Home.styled.js";
 const Home = () => {
   return (
     <HomeContainer>
+      <h1>דף הבית</h1>
       <CardList />
       <Iframe />
     </HomeContainer>
