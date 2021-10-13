@@ -1,38 +1,40 @@
 import styled from "styled-components";
 
 export const PopUpBg = styled.div`
-  width: 100%;
+  width: 50%;
   height: 100%;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  left: 0%;
+  left: 25%;
   bottom: 0%;
 `;
 
 export const PopUpContainer = styled.div`
-  margin-top: 10rem;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  justify-content: center;
+  margin-top: 25em;
   display: flex;
-  flex-wrap: wrap;
-  width: 55%;
   overflow: hidden;
   flex-direction: column;
-  position: relative;
-  left: 25%;
   align-items: center;
   background-color: lightgray;
+  border-radius: 1.5rem;
 `;
 
 export const ImageContainer = styled.div`
-  display: flex;
-  height: 20rem;
-  flex-wrap: wrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 400px;
   overflow: hidden;
   justify-content: center;
 `;
 
-export const PopUpLink = styled.a`
-  text-decoration: none;
-  color: black;
+export const Pbody = styled.div`
+  padding: 1rem;
+  margin-bottom: 1rem;
 `;
 
 /*

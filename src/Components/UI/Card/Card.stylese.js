@@ -5,17 +5,29 @@ export const CardContainer = styled.div`
   align-items: center;
   flex-direction: column;
   width: 20%;
-  height: 100%;
   overflow: hidden;
   align-self: normal;
   background-color: lightgray;
   margin-bottom: 5rem;
   margin-top: 5rem;
   border-radius: 1rem;
+  flex: 0 1 calc(23% - 1em);
+  box-shadow: 5px 10px 8px grey;
+
+  transition: 0.2s ease-in;
+
+  &:hover {
+    box-shadow: 0px 0px 30px 10px #fffaf0;
+  }
 `;
 
 export const CardImage = styled.img`
-  width: 50vh;
+  width: 100%;
+`;
+
+export const CardTitle = styled.div`
+  padding: 0 1rem 0 1rem;
+  min-height: 2rem;
 `;
 
 export const CardLink = styled.a`
@@ -25,20 +37,13 @@ export const CardLink = styled.a`
 
 export const CardContent = styled.div`
   box-sizing: border-box;
-  padding: 1rem 3rem 1rem 3rem;
-  height: 100%;
+  padding: 0 1.5rem 0 1.5rem;
 `;
 
 export const CardParagraph = styled.p`
-  height: 8rem;
-  color: blue;
+  height: 5rem;
   overflow: hidden;
   color: black;
-`;
-
-export const CardTitle = styled.div`
-  padding: 0 2rem 0 2rem;
-  min-height: 5rem;
 `;
 
 /* .card-container {

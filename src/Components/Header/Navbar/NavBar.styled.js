@@ -1,23 +1,21 @@
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
+import { ReactComponent as Logo } from "./images/Logo.svg";
 
 const animationLi = keyframes`
   0%  {
     font-weight: 400;
-    border-bottom: 1px solid LavenderBlush;
     opacity:0.3;
 
   }
   50% {
     font-weight: 500;
-    border-bottom: 1px solid LavenderBlush;
     opacity:0.5;
 
 
   }
   100%  {
     font-weight: 600;
-    border-bottom: 1px solid LavenderBlush;
   }
   `;
 
@@ -25,15 +23,9 @@ export const Nav = styled.nav`
   background-color: HotPink;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
-`;
-
-export const NavUl = styled.ul`
-  display: flex;
-  align-items: center;
-  margin-right: -24px;
 `;
 
 export const NavLi = styled(Link)`
@@ -45,7 +37,6 @@ export const NavLi = styled(Link)`
   height: 100%;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
-
   @media screen and(max-width: 768px) {
     display: none;
   }
@@ -69,11 +60,30 @@ export const NavMenu = styled.div`
   }
 `;
 
-export const LogoLink = styled(Link)`
-  font-size: 3rem;
+export const LogoLink = styled(Link)``;
+
+export const NavLogo = styled(Logo)`
   position: relative;
-  top: 5%;
-  color: lightgray;
+  transform: translate(25em);
+
+  @media (max-width: 1700px) {
+    transform: translate(20em);
+  }
+
+  @media (max-width: 1550px) {
+    transform: translate(15em);
+  }
+
+  @media (max-width: 1380px) {
+    transform: translate(10em);
+  }
+
+  @media (max-width: 1230px) {
+    transform: translate(5em);
+  }
+  @media (max-width: 1070px) {
+    transform: translate(2em);
+  }
 `;
 
 /* .nav-container {

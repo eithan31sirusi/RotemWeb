@@ -10,18 +10,20 @@ import cards from "../../services/cards";
 
 import { CardListContainer } from "./CardList.styled";
 
-const Cards = () => {
+const Cards = (props) => {
   const [showPopUp, setshowPopUp] = useState(false);
   const [selectedCard, setselectedCard] = useState({});
 
   const clickHandler = (id) => {
     const chosenCard = cards.find((card) => card.id === id);
+    props.bgBlurHandler(showPopUp);
     setshowPopUp(!showPopUp);
     setselectedCard(chosenCard);
   };
 
   const closeHandler = () => {
-    return setshowPopUp(false);
+    props.bgBlurHandler(showPopUp);
+    setshowPopUp(false);
   };
 
   return (
