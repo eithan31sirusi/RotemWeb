@@ -1,24 +1,26 @@
 import { React } from "react";
-import { NavUl, NavLi, Nav, NavMenu, LogoLink } from "./NavBar.styled";
+import { NavLi, Nav, NavMenu, LogoLink, NavLogo } from "./NavBar.styled";
 import { useLocation } from "react-router-dom";
-import { AiOutlineCamera } from "react-icons/ai";
 
 import "./isActive.scss";
 
 import "./NavBar.styled";
 
 const NavBar = () => {
+  const singInPostition = {
+    position: "relative",
+    right: "100%",
+  };
   const location = useLocation();
   const { pathname } = location;
   const splitLocation = pathname.split("/");
   console.log(splitLocation);
 
   return (
-
     <Nav>
       <NavMenu>
         <LogoLink to="/">
-          <AiOutlineCamera />
+          <NavLogo />
         </LogoLink>
       </NavMenu>
       <NavMenu>
@@ -47,6 +49,7 @@ const NavBar = () => {
         <NavLi
           to="login"
           className={splitLocation[1] === "login" ? "active" : ""}
+          style={singInPostition}
         >
           התחברות/הרשמה
         </NavLi>
