@@ -1,4 +1,6 @@
 .blur {
   color: red;
   background-color: black;
+  width: 100%;
+  position: absolute;
 }

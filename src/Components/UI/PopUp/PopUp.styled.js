@@ -1,86 +1,65 @@
 import styled from "styled-components";
 
 export const PopUpBg = styled.div`
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  left: 25%;
-  bottom: 0%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(126,126,150,0.9);
+    justify-content: center;
+    align-items: center;
 `;
 
 export const PopUpContainer = styled.div`
-  width: 100%;
+  width: max-content;
   height: auto;
-  position: absolute;
   justify-content: center;
-  margin-top: 25em;
   display: flex;
   overflow: hidden;
   flex-direction: column;
   align-items: center;
   background-color: lightgray;
   border-radius: 1.5rem;
+  height: 45em;
 `;
 
 export const ImageContainer = styled.div`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  justify-content: center;
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    justify-content: center;
 `;
 
 export const Pbody = styled.div`
-  padding: 1rem;
-  margin-bottom: 1rem;
-`;
+    padding: 1rem;
+    width: 45em;
+    margin-bottom: 1rem;
+    height: 10em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    line-height: 1.2em;
 
-/*
-  .popup-link {
-    text-decoration: none;
-    color: black;
-  }
-  .image-container {
-    height: 27rem;
-  }
-  .image-container img {
-    transform: translate(0, -11rem);
-
-    height: 29rem;
-  }
-
-  .popup-content {
-    margin: 1rem;
-    margin-top: 0.5rem;
-    transform: translate(0, -8rem);
-
-    .popup-title {
-      margin-bottom: 0.5rem;
-
-      .popup-title-h3 {
-        margin: 0;
-        padding: 0;
-      }
-    }
-  }
-
-  .popup-body {
-    .popup-body-p {
-      margin: 1rem;
-      padding: 0;
-    }
-  }
-  .btn-container {
-    transform: translate(0, 8rem);
-    width: 100%;
-    height: 0%;
-
-    .btn {
-      margin: 0.5rem;
-      padding: unset;
-    }
-  }
+    /* scroll bar */
+    ::-webkit-scrollbar {
+  width: 10px;
 }
- */
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 105, 180, 0.5);
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 105, 180);
+}
+`;

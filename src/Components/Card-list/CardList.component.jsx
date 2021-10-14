@@ -52,13 +52,13 @@ const Cards = (props) => {
       })}
 
       {showPopUp && (
-        <CardListContainer>
+
           <PopUp card={selectedCard}>
             <Button backgroundColor="#eba6ed" onClick={closeHandler}>
               סגרי
             </Button>
           </PopUp>
-        </CardListContainer>
+ 
       )}
     </Container>
   );
