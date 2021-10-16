@@ -1,17 +1,18 @@
 import React from "react";
 
-import Cards from "../../Card-list/Card-list.component";
+import CardList from "../../Card-list/CardList.component";
+import Iframe from "../../UI/Iframe/Iframe.component";
 
-import "./Home.styles.scss";
+import { HomeContainer } from "./Home.styled";
+import "./Home.styled.js";
 
 const Home = () => {
   return (
-    <>
-      <h1>Home Page!</h1>
-      <div className="main-container">
-        <Cards />
-      </div>
-    </>
+    <HomeContainer>
+      <h1>דף הבית</h1>
+      <CardList />
+      <Iframe />
+    </HomeContainer>
   );
 };
 

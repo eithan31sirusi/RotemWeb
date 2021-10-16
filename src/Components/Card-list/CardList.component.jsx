@@ -2,13 +2,12 @@ import React, { useState } from "react";
 
 import { Button } from "../UI/Button/Button.styles";
 import { Container } from "../UI/Container/Container.styles";
+import { CardListTitle } from "./CardList.styled";
 
 import Card from "../UI/Card/Card.component";
 import PopUp from "../UI/PopUp/PopUp.component";
 
 import cards from "../../services/cards";
-
-import "./Cards.styles.scss";
 
 const Cards = () => {
   const [showPopUp, setshowPopUp] = useState(false);
@@ -21,11 +20,12 @@ const Cards = () => {
   };
 
   const closeHandler = () => {
-    return setshowPopUp(false);
+    setshowPopUp(false);
   };
 
   return (
     <Container>
+      <CardListTitle>he</CardListTitle>
       {cards.map((card) => {
         return (
           <Card
@@ -38,31 +38,23 @@ const Cards = () => {
             clickHandler={clickHandler}
           >
             <Button
-              backgroundColor="red"
+              backgroundColor="#eba6ed"
               variant="contained"
               color="primary"
               onClick={() => clickHandler(card.id)}
             >
-              View More
+              לקרוא עוד
             </Button>
           </Card>
         );
       })}
 
       {showPopUp && (
-        <div className="popup-container">
-          <PopUp card={selectedCard} />
-          <div className="btn-container">
-            <Button
-              className="btn"
-              variant="contained"
-              color="primary"
-              onClick={closeHandler}
-            >
-              Close
-            </Button>
-          </div>
-        </div>
+        <PopUp card={selectedCard}>
+          <Button backgroundColor="#eba6ed" onClick={closeHandler}>
+            סגרי
+          </Button>
+        </PopUp>
       )}
     </Container>
   );

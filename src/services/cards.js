@@ -1,41 +1,45 @@
 const cards = [
   {
     id: 1,
-    title: "It is a long established",
+    title: "אמת ושקר וגבולות",
     imageUrl:
       "https://cdn.pixabay.com/photo/2021/07/21/07/09/cygnet-6482420_960_720.jpg",
     imageRedirect: "https://sass-lang.com/guide",
 
-    body:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    body: `האם "מדבר שקר תרחק" שייך רק לבית דין, או לכל שקר. האם לכל שקר שאינו בבית דין זה רק ענין מוסרי, או  גם הלכתי ? ואולי רק לשקר שיש בו משום תועלת לאחד ונזק לאחר, אבל דבר שאין לו תועלת, לא מוגדר  כאיסור. `,
   },
   {
     id: 2,
-    title: "many web sites still",
+    title: ` של מי הילד?`,
     imageUrl:
       "https://cdn.pixabay.com/photo/2021/09/06/16/42/bird-6602049_960_720.jpg",
-    body:
-      "many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    body: `מה גישת ההלכה בנושא זה, האם הילד "שייך להוריו", או שהילד אצל הוריו רק משום שזה המקום הטוב ביותר בשבילו. להלן נראה שגם על פי ההלכה, טובת הילד קובעת. וגם בהלכה איננו מוצאים הגדרה של "בעלות" על הילד להוריו. מה גישת ההלכה לגבי הוצאת ילדים מן הבית בכלל. `,
     imageRedirect: "https://www.lipsum.com/",
   },
   {
     id: 3,
-    title: "There are many variations",
+    title: "מוסר ואהבה",
     imageUrl:
       "https://cdn.pixabay.com/photo/2021/09/07/10/14/animal-6603517_960_720.jpg",
-    body:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+    body: `בדבריו הזכיר הרב כי מקומות העבודה הקיימים מספקים אתגרים לא פשוטים עבור הבית היהודי: סביבת עבודה מעורבת, מעסיקים המבקשים לייצר אווירה חברתית, ואף מזמינים (או אפילו דורשים) מהעובדים השתתפות בערבי גיבוש, בילויים, השתלמויות וארוחות. במקומות עבודה רבים קיימת רשת אינטרנטית שאינה מסוננת, עולה דרישה לתואר אקדמי, ועוד.
+
+הדברים שנאמרו בכינוס הם תמצית עדינה של מציאות חיים חדשה הקורמת עור וגידים: אם בעבר חלק נרחב בקרב הנשים החרדיות בחר לגדל את דור העתיד בנחת ולהתעטר בכינוי "עקרת הבית", הרי שכיום מלמדים הנתונים על עליה משמעותית בשיעור תעסוקת נשים חרדיות. בשנת 2018 עמד שיעור ההשתתפות של נשים חרדיות בשוק התעסוקה על 76%, ובכך עקף את שיעור הנשים העובדות בכלל האוכלוסיה.[2]
+
+אם לא די בכך, ניתן להצביע על גיוון משמעותי באופי תעסוקתן של נשים חרדיות. בין השנים 2015-2001 ירד שיעור העוסקות בחינוך בקרב הנשים החרדיות בכוח העבודה מ-64% ל-42%.[3] לבד ממורות וגננות, ניתן לראות היום נשים חרדיות בתחומים מקצועיים רבים, ובהתאם לכך כוללים מסלולי ההכשרה לבנות קשת רחבה של מקצועות: ראיית חשבון, הנדסת תוכנה, עיצוב גרפי, תרפיה במוסיקה, אדריכלות ועוד ועוד. לימודים אלו מתקיימים בתוך הבית פנימה, בסמינרים החרדיים. ואם היה מי שסבר שלאחר תום הלימודים הרשמיים וקבלת התעודה תוכל בת-בית-יעקב להיפרד מספסל הלימודים, הרי שטעה. אף לאחר סיום הלימודים הרשמיים בסמינר, קיים שוק פעיל ותוסס של לימודי המשך. בתי המורה מלאים בקורסים שונים המציעים השתלמויות בשלל תחומים המעשירים את הידע המקצועי של המשתתפת, ומזכים אותה ב"גמולים" שישתקפו בתלוש המשכורת בסופו של יום.
+
+לצד מסלולי ההכשרה של הסמינרים, קיים שוק מקביל: האקדמיה החרדית. יותר ממחצית מהנשים החרדיות ניגשות היום לבחינות הבגרות.[4] בשנת 2016 היו הנשים כשני שלישים מהסטודנטים החרדיים באקדמיה.[5] נשים חרדיות רוכשות השכלה אקדמית ומשתלבות בשוק התעסוקה בתור עורכות דין, מטפלות בתחומים פרא-רפואיים (ואפילו רפואה), עובדות-סוציאליות, פסיכולוגיות ועוד. רבים בציבור מתנגדים לתופעה ומגנים אותה, אך הצלחתם נמדדת בעיקר בדחיית השתלבותן של הבנות במוסדות המעניקים תואר אקדמי בשנים ספורות. השטח אומר את דברו: מחזורים רבים של בוגרות הנפיקה האקדמיה החרדית.
+
+די בנתונים אלו להבין שלפנינו תמונת מצב שונה בתכלית מפרופיל האישה החרדית בדור הקודם. אם בעבר ניתן היה לזהות את עיקר חייה של האישה החרדית בבית פנימה, הרי שבשנים האחרונות שוהות נשים חרדיות חלק ניכר ומשמעותי מיומן במקום העבודה, ובהתאם אף רוכשות השכלה וכלים כדי להתפתח בתחום המקצועי.`,
     imageRedirect: "https://material-ui.com/getting-started/usage/",
   },
   {
     id: 4,
-    title: "many web sites still",
+    title: "המוסר הטבעי",
     imageUrl:
       "https://cdn.pixabay.com/photo/2021/09/03/15/37/mountain-6596074_960_720.jpg",
     imageRedirect:
       "https://pixabay.com/photos/mountain-nature-alpine-landscape-6596074/",
-    body:
-      "many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    body: `הקב"ה ברא את האדם "בְּצֶלֶם אֱלֹהִים", וחנן אותו ברגישות מוסרית ומצפונית - מוסר טבעי. רגישות זו מאפיינת את האדם מאז בריאת העולם, גם כשלא נבעה מתוך ציווי אלוהי ישיר. הקב"ה פונה לאדם דרך המצפון והמוסר. כך עולה מדברי הגמרא בעירובין (ק ע"ב):`,
   },
 ];
 

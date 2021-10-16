@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  width: 200px;
-  height: 50px;
-  background-color: ${(props) => props.backgroundColor};
-  color: red;
+  width: 9rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 105, 180, 0.5);
+  color: black;
+  margin-bottom: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  box-shadow: 5px 5px 8px grey;
+  transition: 0.2s ease-in;
 
-  &:active {
-    background-color: green;
+  &:hover {
+    cursor: pointer;
+    background-color: #fffaf0;
   }
 `;

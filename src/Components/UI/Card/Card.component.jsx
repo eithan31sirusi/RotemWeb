@@ -1,27 +1,25 @@
 import React from "react";
 
-import "./Card.styles.scss";
+import {
+  CardContainer,
+  CardImage,
+  CardContent,
+  CardParagraph,
+  CardTitle,
+} from "./Card.stylese";
 
 const Card = (props) => {
   return (
-    <div className="card-container">
-      <div>
-        <a href={props.imageRedirect} className="card-link">
-          <div className="image-container">
-            <img src={props.imageUrl} alt="" />
-          </div>
-          <div className="card-content">
-            <div className="card-title">
-              <h3 className="card-title-h3">{props.title}</h3>
-            </div>
-            <div className="card-body">
-              <p className="card-body-p">{props.body}</p>
-            </div>
-          </div>
-        </a>
-      </div>
+    <CardContainer className="card-container">
+      <CardImage src={props.imageUrl} alt="" />
+      <CardContent className="card-content">
+        <CardTitle className="card-title">
+          <h3 className="card-title-h3">{props.title}</h3>
+        </CardTitle>
+        <CardParagraph className="card-body-p">{props.body}</CardParagraph>
+      </CardContent>
       {props.children}
-    </div>
+    </CardContainer>
   );
 };
 
