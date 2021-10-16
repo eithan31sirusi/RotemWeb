@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
+  font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
   flex-direction: column;

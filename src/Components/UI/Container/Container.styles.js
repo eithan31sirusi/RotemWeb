@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
   max-width: 100%;
   background-color: ${(props) =>
     props.backgorundColor || "rgba(255, 105, 180, 0.5)"};
