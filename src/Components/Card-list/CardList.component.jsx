@@ -25,7 +25,7 @@ const Cards = () => {
 
   return (
     <Container>
-      <CardListTitle>he</CardListTitle>
+      <CardListTitle>מאמרים</CardListTitle>
       {cards.map((card) => {
         return (
           <Card
