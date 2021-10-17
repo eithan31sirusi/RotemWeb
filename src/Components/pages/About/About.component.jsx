@@ -7,16 +7,16 @@ const About = () => {
       <h1>עלינו</h1>
       <AboutBox>
         <TextContainer>
-          <h1>sfsf</h1>
-          <p>sdsdsd</p>
+          <h1>מי אנחנו?</h1>
+          <p></p>
         </TextContainer>
         <TextContainer>
-          <h1>sfsf</h1>
-          <p>sdsdsd</p>
+          <h1>החזון שלנו</h1>
+          <p></p>
         </TextContainer>
         <TextContainer>
-          <h1>sfsf</h1>
-          <p>sdsdsd</p>
+          <h1>עזרה הדדית</h1>
+          <p></p>
         </TextContainer>
       </AboutBox>
     </AboutContainer>

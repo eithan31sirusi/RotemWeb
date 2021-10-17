@@ -8,6 +8,11 @@ export const AboutContainer = styled.div`
   label {
     font-family: "Open Sans", sans-serif;
   }
+  p {
+    font-size: 1rem;
+    width: 10%;
+    background-color: red;
+  }
 `;
 
 export const ContactH2 = styled.h3`
@@ -42,5 +47,5 @@ export const TextContainer = styled.form`
   border: 3px solid rgba(255, 105, 180, 0.8);
   margin: 5em;
   background-color: rgba(255, 80, 180, 0.2);
-  color: lightsalmon;
+  color: GhostWhite;
 `;

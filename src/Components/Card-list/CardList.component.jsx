@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
 import { Button } from "../UI/Button/Button.styles";
-import { Container } from "../UI/Container/Container.styles";
-import { CardListTitle } from "./CardList.styled";
+import { CardListTitle, CardListContainer } from "./CardList.styled";
 
 import Card from "../UI/Card/Card.component";
 import PopUp from "../UI/PopUp/PopUp.component";
@@ -24,7 +23,7 @@ const Cards = () => {
   };
 
   return (
-    <Container>
+    <CardListContainer>
       <CardListTitle>מאמרים</CardListTitle>
       {cards.map((card) => {
         return (
@@ -56,7 +55,7 @@ const Cards = () => {
           </Button>
         </PopUp>
       )}
-    </Container>
+    </CardListContainer>
   );
 };
 

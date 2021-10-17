@@ -29,7 +29,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLi = styled(Link)`
-  color: LavenderBlush;
+  color: GhostWhite;
   display: flex;
   align-items: center;
   text-decoration: none;
