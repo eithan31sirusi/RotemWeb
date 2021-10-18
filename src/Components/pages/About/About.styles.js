@@ -49,3 +49,10 @@ export const TextContainer = styled.form`
   background-color: rgba(255, 80, 180, 0.2);
   color: GhostWhite;
 `;
+
+export const CandleFlex = styled.div`
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 16em;
+`;

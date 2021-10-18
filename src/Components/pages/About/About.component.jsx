@@ -1,5 +1,12 @@
 import React from "react";
-import { AboutContainer, TextContainer, AboutBox } from "./About.styles";
+import CandleAnimation from "../../../animations/CandleAnimation/CandleAnimation.component";
+
+import {
+  AboutContainer,
+  TextContainer,
+  AboutBox,
+  CandleFlex,
+} from "./About.styles";
 
 const About = () => {
   return (
@@ -19,6 +26,11 @@ const About = () => {
           <p></p>
         </TextContainer>
       </AboutBox>
+      <CandleFlex>
+        {" "}
+        <CandleAnimation />
+        <CandleAnimation />
+      </CandleFlex>
     </AboutContainer>
   );
 };
