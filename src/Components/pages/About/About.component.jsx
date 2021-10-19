@@ -1,5 +1,6 @@
 import React from "react";
 import CandleAnimation from "../../../animations/CandleAnimation/CandleAnimation.component";
+import CircleAnimation from "../../../animations/CircleAnimation/CircleAnimation.component";
 
 import {
   AboutContainer,
@@ -30,6 +31,7 @@ const About = () => {
         {" "}
         <CandleAnimation />
         <CandleAnimation />
+        <CircleAnimation />
       </CandleFlex>
     </AboutContainer>
   );

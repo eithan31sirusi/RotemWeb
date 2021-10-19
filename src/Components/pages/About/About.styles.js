@@ -56,3 +56,7 @@ export const CandleFlex = styled.div`
   position: relative;
   bottom: 16em;
 `;
+
+export const ContentZindex = styled.div`
+  z-index: 9999999999;
+`;
