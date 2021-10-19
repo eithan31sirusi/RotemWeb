@@ -51,10 +51,10 @@ export const CandleBody = styled.div`
   height: 45em;
   font-size: 7px;
   background: linear-gradient(
-    orange,
-    darkorange,
-    sienna,
-    saddlebrown 50%,
+    White,
+    SeaShell,
+    WhiteSmoke,
+    Silver 50%,
     rgba(0, 0, 0, 0.6)
   );
   box-shadow: inset 2em -3em 5em rgba(0, 0, 0, 0.4), inset 2em 0em 5em;
@@ -69,16 +69,10 @@ export const CandleBody = styled.div`
     position: absolute;
     width: inherit;
     height: 5em;
-    border: 0.2em solid darkorange;
+    border: 0.2em solid WhiteSmoke;
     border-radius: 50%;
     box-sizing: border-box;
-    background: radial-gradient(
-      #444444,
-      orange,
-      darkorange,
-      sienna,
-      saddlebrown
-    );
+    background: radial-gradient(#444444, White, SeaShell, WhiteSmoke, Silver);
     filter: opacity(0.4);
   }
 `;
@@ -88,7 +82,7 @@ export const CandleStick = styled.div`
   width: 0.6em;
   height: 4em;
   top: -1.8em;
-  background: linear-gradient(#111111, #000000, orange 90%);
+  background: linear-gradient(Khaki, #000000, PapayaWhip 90%);
 `;
 
 export const CandleFlame = styled.div`

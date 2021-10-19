@@ -15,7 +15,7 @@ const Login = () => {
       <h1>התחברות</h1>
       <FormBox>
         <FormContainer>
-          <label htmlFor="mail">שם משתמשת</label>
+          <label htmlFor="mail">כתובת מייל</label>
           <ContactInput type="text" name="mail" />
           <label htmlFor="password">סיסמא</label>
           <ContactInput type="text" name="password" />
