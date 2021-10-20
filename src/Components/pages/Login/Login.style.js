@@ -3,9 +3,14 @@ import styled from "styled-components";
 import Background from "./images/loginBG.jpg";
 
 export const ContactContainer = styled.div`
-h1, h2 ,h3, label{
-    font-family: 'Open Sans', sans-serif;
-    
+h1, h2 ,h3 {
+    font-family: 'Open Sans', sans-serif;   
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 `;
 
@@ -38,17 +43,18 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 border-radius: 50%;
-    width: 450px;
-    height: 450px;
+    width: 70vh;
+    height: 70vh;
     background: pink;
-    border: 3px solid rgba(255, 105, 180, 0.8);
     margin: 5em;
     background-color: rgba(255, 105, 180, 0.2);
+    position: absolute;
 `
 
 export const ContactInput = styled.input`
 padding: 0.2em;
 margin-bottom: 2em;
+margin-top: 1em;
 font-size: 1rem;
 font-family: 'Open Sans', sans-serif;
 border-radius: 0.5em;

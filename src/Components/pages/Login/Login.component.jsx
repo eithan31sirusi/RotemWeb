@@ -8,12 +8,14 @@ import {
   LogninLink,
 } from "./Login.style";
 import { Button } from "../../UI/Button/Button.styles";
+import CircileAnimation from '../../../animations/CircleAnimation/CircleAnimation.component'
 
 const Login = () => {
   return (
     <ContactContainer>
       <h1>התחברות</h1>
       <FormBox>
+      <CircileAnimation/>
         <FormContainer>
           <label htmlFor="mail">כתובת מייל</label>
           <ContactInput type="text" name="mail" />
