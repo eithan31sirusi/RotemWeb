@@ -16,15 +16,17 @@ export const CircilContainer = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: start;
+  z-index: 0;
 `;
 
 export const Circle = styled.div`
   position: relative;
-  width: 50vh;
-  height: 50vh;
-  background: linear-gradient(red, blue);
+  width: 80vh;
+  height: 80vh;
+  background: linear-gradient(white, DeepPink);
+  opacity: 0.5;
   border-radius: 50%;
-  animation: ${Roler} 2s linear infinite;
+  animation: ${Roler} 10s linear infinite;
   margin: 5em;
 
   &::after {
@@ -35,6 +37,6 @@ export const Circle = styled.div`
     bottom: 35px;
     left: 35px;
     border-radius: 50%;
-    background-color: rgba(255, 80, 180, 1);
+    background-color: rgba(255, 80, 180, 0.5);
   }
 `;

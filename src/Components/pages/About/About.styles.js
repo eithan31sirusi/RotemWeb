@@ -41,13 +41,11 @@ export const TextContainer = styled.form`
   align-items: center;
   justify-content: start;
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
-  background: pink;
-  border: 3px solid rgba(255, 105, 180, 0.8);
+  width: 65vh;
+  height: 65vh;
   margin: 5em;
-  background-color: rgba(255, 80, 180, 0.2);
   color: GhostWhite;
+  position: absolute;
 `;
 
 export const CandleFlex = styled.div`
@@ -57,6 +55,4 @@ export const CandleFlex = styled.div`
   bottom: 16em;
 `;
 
-export const ContentZindex = styled.div`
-  z-index: 9999999999;
-`;
+
