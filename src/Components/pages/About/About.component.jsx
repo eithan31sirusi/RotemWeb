@@ -14,27 +14,31 @@ const About = () => {
     <AboutContainer>
       <h1>עלינו</h1>
       <AboutBox>
+      <CircleAnimation />
         <TextContainer>
           <h1>מי אנחנו?</h1>
           <p></p>
         </TextContainer>
+{/*         <CircleAnimation>
         <TextContainer>
           <h1>החזון שלנו</h1>
           <p></p>
         </TextContainer>
-        <TextContainer>
+          <CircleAnimation>
+          <TextContainer>
           <h1>עזרה הדדית</h1>
           <p></p>
         </TextContainer>
+        </CircleAnimation> */}
       </AboutBox>
       <CandleFlex>
         {" "}
         <CandleAnimation />
         <CandleAnimation />
-        <CircleAnimation />
       </CandleFlex>
     </AboutContainer>
   );
 };
 
 export default About;
+
